@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franquia Fácil</title>
+    <style>
+        /* Estilo do código anterior ... */
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        form input,
+        form textarea,
+        form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        form button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Franquia Fácil</h1>
+        <p>Sua oportunidade de empreender com sucesso!</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#franquias">Franquias</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="sobre">
+        <!-- Conteúdo da seção Sobre Nós ... -->
+    </section>
+
+    <section id="franquias">
+        <!-- Conteúdo da seção Franquias ... -->
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+
+        <form action="mailto:seuemail@dominio.com" method="post" enctype="text/plain">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tipo-mensagem">Tipo de Mensagem:</label>
+            <select id="tipo-mensagem" name="tipo-mensagem" required>
+                <option value="duvida">Dúvida</option>
+                <option value="feedback">Feedback</option>
+                <option value="parceria">Proposta de Parceria</option>
+                <!-- Adicione mais opções conforme necessário -->
+            </select>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Franquia Fácil. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
